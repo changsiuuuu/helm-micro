@@ -1,0 +1,9 @@
+# charts/index/values.yaml
+
+replicaCount: 2
+image:
+  repository: changsiuuuu/index-app
+  tag: "1.0"
+  pullPolicy: IfNotPresent
+
+containerPort: 80

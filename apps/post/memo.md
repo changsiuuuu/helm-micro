@@ -1,6 +1,6 @@
 
 ```bash
-docker build -t myoli999/post-app:1.0 .
-docker push myoli999/post-app:1.0
+docker build -t changsiuuuu/post-app:2.0 .
+docker push changsiuuuu/post-app:2.0
 
 ```

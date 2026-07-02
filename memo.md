@@ -23,3 +23,31 @@ helm package . -d docs/
 helm repo index docs --url https://changsiuuuu.github.io/helm-micro/
 
 ```
+https://changsiuuuu.github.io/helm-micro/
+### 깃헙 페이지 설정
+세팅즈 페이지스 마스터 /docs save
+https://changsiuuuu.github.io/helm-micro/
+```bash
+helm repo ls
+# 방금 만든 helm chart 의 위치를 헬름  저장소로 등록
+helm repo add msa https://changsiuuuu.github.io/helm-micro/
+
+helm repo ls
+[user1@master step24_microservice_helm]$ helm repo ls
+NAME                    URL                                               
+cnpg                    https://cloudnative-pg.github.io/charts           
+argo                    https://argoproj.github.io/argo-helm              
+my-repo                 https://changsiuuuu.github.io/mychart/            
+prometheus-community    https://prometheus-community.github.io/helm-charts
+msa                     https://changsiuuuu.github.io/helm-micro/ 
+
+# 동기화
+helm repo update
+
+# 차트 검색
+helm search repo msa
+
+helm uninstall msa-release -n msa
+
+k delete ns msa
+```
