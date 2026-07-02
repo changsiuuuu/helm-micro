@@ -2,8 +2,31 @@ apiVersion: v1
 entries:
   msa-platform:
   - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2026-07-02T11:40:13.012677561+09:00"
+    dependencies:
+    - condition: index-app.enabled
+      name: index-app
+      repository: file://charts/index
+      version: 0.1.2
+    - condition: market-app.enabled
+      name: market-app
+      repository: file://charts/market
+      version: 0.1.2
+    - condition: post-app.enabled
+      name: post-app
+      repository: file://charts/post
+      version: 0.1.2
+    description: index + market + post
+    digest: 9ec0fc832f8d2f4626275a390e127db23d173841db40131dcbfa55b6d556e066
+    name: msa-platform
+    type: application
+    urls:
+    - https://changsiuuuu.github.io/helm-micro/msa-platform-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-02T11:25:58.299148112+09:00"
+    created: "2026-07-02T11:40:13.010196158+09:00"
     dependencies:
     - condition: index-app.enabled
       name: index-app
@@ -26,7 +49,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-02T11:25:58.297697357+09:00"
+    created: "2026-07-02T11:40:13.009006846+09:00"
     dependencies:
     - condition: index-app.enabled
       name: index-app
@@ -47,4 +70,4 @@ entries:
     urls:
     - https://changsiuuuu.github.io/helm-micro/msa-platform-0.1.0.tgz
     version: 0.1.0
-generated: "2026-07-02T11:25:58.296697174+09:00"
+generated: "2026-07-02T11:40:13.007821782+09:00"
