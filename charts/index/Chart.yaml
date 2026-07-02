@@ -1,0 +1,7 @@
+# step24_microservice_helm/charts/index/Chart.yaml
+apiVersion: v2
+name: index-app
+description: index 페이지
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
