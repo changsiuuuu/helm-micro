@@ -14,3 +14,12 @@ auth db, users db, posts db, market db
 
 인증처리를 할때 사용자 정보가 필요하기도 한데 서로간 pod들이 데이터를 주고받을 일이있다
 api를 통해서 서로 의존정보가있으면 서로 데이터를 주고받을수있다
+
+```bash
+# chart를 압축해서 docs/ 폴더 안에 저장
+helm package . -d docs/
+
+# index.yaml 파일을 docs/ 폴더 안에 자동 생성하기
+helm repo index docs --url https://changsiuuuu.github.io/helm-micro/
+
+```
